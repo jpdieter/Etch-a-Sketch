@@ -1,0 +1,19 @@
+#container{
+display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+}
+
+/* unsure if needed
+ .div{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+   
+}
+*/
+
+#container div{
+width: 100px;
+height: 100px;
+}
