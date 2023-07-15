@@ -1,29 +1,40 @@
-#container{
-display: grid;
-
-}
-
-/* unsure if needed
- .div{
-    display:flex;
+/*viewport height) units to allow the body to set a minimum height value based upon the full height of the viewport*/
+body { min-height: 100vh; 
+  background-color: #0D0208;
+  min-height: 100vh;
+    height: 100vh;
+    display: flex;
     justify-content: center;
-    align-items:center;
-   
+    align-items: center;
+    flex-direction: column;
+    gap: 2%;
 }
-*/
 
-#container div{
-  width: 1000px;
-  height: 1000px;
+#container{
+  display: grid;
+  height: 70%;
+  width: 70%;
+  justify-content: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: #003B00;
+}
+
+#container > div {
+ 
+  width: 30px;
+    height: 30px;
+    border: 1px solid gray;
   }
 
 #button-container{
     display:flex;
     justify-content: center;
- 
-    }
+    align-items: center;
+    gap: 5%;
+     }
 
-#button{
+#generate-button{
   background-color: #008F11;
   color: #fff;
   border: 5px;
@@ -35,8 +46,8 @@ display: grid;
 
 }
 
-#button:hover{
+#generate-button:hover{
   background-color: #00FF41 ;
   transition: 0.7s;
-  color: #35374f;
+  color: dark;
 }
