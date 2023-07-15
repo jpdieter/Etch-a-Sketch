@@ -1,7 +1,6 @@
 #container{
 display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 5px;
+
 }
 
 /* unsure if needed
@@ -14,6 +13,30 @@ display: grid;
 */
 
 #container div{
-width: 100px;
-height: 100px;
+  width: 1000px;
+  height: 1000px;
+  }
+
+#button-container{
+    display:flex;
+    justify-content: center;
+ 
+    }
+
+#button{
+  background-color: #008F11;
+  color: #fff;
+  border: 5px;
+  padding: 15px 32px;
+  border-radius: 10px;
+  text-align: center;
+  min-height: 30px;
+  min-width: 120px;
+
+}
+
+#button:hover{
+  background-color: #00FF41 ;
+  transition: 0.7s;
+  color: #35374f;
 }
