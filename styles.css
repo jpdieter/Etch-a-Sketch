@@ -1,14 +1,27 @@
-/*viewport height) units to allow the body to set a minimum height value based upon the full height of the viewport*/
-body { min-height: 100vh; 
-  background-color: #0D0208;
-  min-height: 100vh;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 2%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
 }
+
+/*viewport height) units to allow the body to set a minimum height value based upon the full height of the viewport*/
+body { 
+  min-height: 100vh; 
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0D0208;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2%;
+}
+
+h1 {
+  color: white;
+}
+
 
 #container{
   display: grid;
@@ -20,13 +33,14 @@ body { min-height: 100vh;
   background-color: #008F11;
 }
 
-//UNSURE IF NEEDED
+/*UNSURE IF NEEDED
 #container > div {
  
-  width: 30px;
+  //width: 30px;
     height: 30px;
     border: 1px solid gray;
   }
+*/
 
 #button-container{
     display:flex;
@@ -53,7 +67,7 @@ body { min-height: 100vh;
   color: dark;
 }
 
-.generatedDivs:hover{
+.newDiv:hover{
   background-color: yellow;
   transition: 0.7s;
   color: dark;
