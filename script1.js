@@ -1,9 +1,7 @@
-document.querySelector("#generate-button").addEventListener("click", generateGrid)
-
-generateGrid(32);
+document.querySelector("#generate-button").addEventListener("click", userSelection)
 
 function generateGrid(size){
- 
+
     let container = document.querySelector(".container");
     container.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
     container.style.gridTemplateRows = `repeat(${size}, 1fr)`;
@@ -22,3 +20,11 @@ reset.onclick = function resetGrid(){
 
 }
 
+function userSelection(){
+    let userChoice = prompt("Please enter a grid size less than or equal to 100:");
+    if (userChoice <= undefined || userChoice === null || userChoice === "" || userChoice > 100){
+        alert ("Please select a number less than 100.")
+        return
+    }
+   generateGrid(userChoice);
+}
