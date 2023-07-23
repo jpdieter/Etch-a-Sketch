@@ -1,74 +1,40 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 
-}
-
-/*viewport height) units to allow the body to set a minimum height value based upon the full height of the viewport*/
-body { 
-  min-height: 100vh; 
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #0D0208;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 2%;
-}
-
-h1 {
-  color: white;
-}
-
-
-#container{
-  display: grid;
-  height: 70%;
-  width: 70%;
-  justify-content: center;
-  border: 2px solid black;
-  border-radius: 10px;
-  background-color: #008F11;
-}
-
-/*UNSURE IF NEEDED
-#container > div {
- 
-  //width: 30px;
-    height: 30px;
-    border: 1px solid gray;
-  }
-*/
-
-#button-container{
-    display:flex;
+body{
+    display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5%;
-     }
-
-#generate-button{
-  background-color: #008F11;
-  color: #fff;
-  border: 5px;
-  padding: 15px 32px;
-  border-radius: 10px;
-  text-align: center;
-  min-height: 30px;
-  min-width: 120px;
+    flex-direction: column;
+    background-color: #0D0208;
 
 }
 
-#generate-button:hover{
-  background-color: #00FF41 ;
-  transition: 0.7s;
-  color: dark;
+.header{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    width: 400px;
+    justify-content: space-around;
+   
 }
 
-.newDiv:hover{
-  background-color: yellow;
-  transition: 0.7s;
-  color: dark;
+.footer{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   
+
+}
+
+.container{
+    margin: 15px;
+    width: 500px;
+    height: 500px;
+    display: grid;
+    border: 1px solid white;
+    background-color: #00FF41;
+}
+
+h1{
+    color: white;
 }
